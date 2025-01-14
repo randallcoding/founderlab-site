@@ -94,11 +94,9 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  background-color: #192324; 
-  color: #fff;
   padding: 60px 20px;
   text-align: center;
-  margin-bottom: 500px;
+  margin-bottom: 300px;
 }
 
 .message {
@@ -121,7 +119,7 @@ nav {
   margin: 0 auto;
   border-top: 1px solid #000;
   padding-top: 20px;
-  margin-bottom: 1000px;
+  margin-bottom: 300px;
 }
 
 .header {
@@ -156,7 +154,7 @@ nav {
   font-size: 18px;
   line-height: 1.6;
   color: #000;
-  max-width: 600px;
+  max-width: 300px;
 }
 
 .text .highlight {
@@ -187,7 +185,7 @@ nav {
   border-radius: 20px;
   overflow: hidden;
   padding: 20px;
-  margin-bottom: 500px;
+  margin-bottom: 300px;
 }
 
 
@@ -317,7 +315,7 @@ header {
   border-radius: 20px;
   overflow: hidden;
   padding: 20px;
-  margin-bottom: 500px;
+  margin-bottom: 300px;
   color: #fff;
 }
 
@@ -363,7 +361,6 @@ header {
 }
 
 .footer-links {
-  display: flex;
   justify-content: center;
   flex-wrap: wrap; 
   margin: 20px 0;
