@@ -5,18 +5,53 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: 'NeueMontrealBook'; /* Replace with your font name */
+  src: url('./assets/fonts/PPNeueMontreal-Book.woff2') format('woff2'), /* Modern browsers */
+       url('./assets/fonts/PPNeueMontreal-Book.woff') format('woff');   /* Older browsers */
+  font-weight: normal; /* Regular weight */
+  font-style: normal;  /* Regular style */
+}
+
+@font-face {
+  font-family: 'NeueMontrealBold'; /* Replace with your font name */
+  src: url('./assets/fonts/PPNeueMontreal-Bold.woff2') format('woff2'), /* Modern browsers */
+       url('./assets/fonts/PPNeueMontreal-Bold.woff2') format('woff');   /* Older browsers */
+  font-weight: normal; /* Regular weight */
+  font-style: normal;  /* Regular style */
+}
+
+
 * {
-  margin: 10px;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'NeueMontrealBook', sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
-  font-weight: 300;
+  font-weight: 200;
+  background-color: #f1f1ed;
+}
+
+html, body {
+  height: 100%; /* Ensure the body spans the full viewport height */
+  margin: 0; /* Remove default browser margin */
+}
+
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 
@@ -24,16 +59,17 @@ body {
 /* HEADER */
 
 nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  height: 17vh;
+  padding: 0 20px; 
 }
 
 .btn-container {
-    display: flex;
-    position: fixed;
-    right: 0;
-    margin-right: 10px;
+  display: flex; 
+  justify-content: flex-end; 
+  flex-grow: 1;
 }
 
 .btn {
@@ -53,9 +89,7 @@ nav {
 }
 
 .logosmall {
-    display: flex;
-    position: fixed;
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .logolarge {
@@ -76,7 +110,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center; 
-  font-size: large;
+  font-size: xx-large;
 }
 
 
@@ -88,20 +122,24 @@ nav {
 
 .container1 {
   width: 100%;
-  margin: 0 auto;
+  min-height: 100vh; /* Full viewport height */
+  margin: 0;
+  padding: 60px 20px; /* Add some inner spacing */
+  background-color: #192324; /* Dark background */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  padding: 60px 20px;
-  text-align: center;
-  margin-bottom: 300px;
+  box-sizing: border-box; /* Include padding in height calculations */
 }
 
 .message {
   font-size: 18px;
   line-height: 1.6;
+  font-weight: 500;
+  color: #fff;
+  font-size: xx-large;
+  font-weight: bold;
 }
 
 .highlight {
@@ -114,62 +152,52 @@ nav {
 /* INTRO2 */
 
 
-.container2 {
-  max-width: 800px;
-  margin: 0 auto;
-  border-top: 1px solid #000;
-  padding-top: 20px;
-  margin-bottom: 300px;
+.personal-brand-stats {
+  margin: 40px auto;
+  padding: 20px;
+  line-height: 1.6;
+  width: 100%;
 }
 
-.header {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 40px;
-  text-align: left;
-}
-
-.stats {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.stat-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  position: relative;
-}
-
-.number {
+.personal-brand-stats h2 {
   font-size: 24px;
   font-weight: bold;
-  color: #000;
-  flex-shrink: 0;
-  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
 }
 
-.text {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #000;
-  max-width: 300px;
+.stat {
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr;
+  align-items: start;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
-.text .highlight {
-  color: #008080;
+.stat-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.stat-content p {
+  font-size: xx-large;
+  color: #333;
+}
+
+.highlight {
+  color: #008b8b; /* teal */
   font-weight: bold;
 }
 
-.source {
-  font-size: 12px;
-  color: #666;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+.stat-source {
+  font-size: 14px;
+  color: #777;
   text-align: right;
 }
+
 
 
 /* IMAGE1 */
@@ -185,7 +213,6 @@ nav {
   border-radius: 20px;
   overflow: hidden;
   padding: 20px;
-  margin-bottom: 300px;
 }
 
 
@@ -207,12 +234,10 @@ nav {
   background-color: white;
   color: black;
   font-size: 1rem;
-  font-weight: bold;
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  text-transform: uppercase;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -232,57 +257,71 @@ nav {
 /* INTRO3 */
 
 
-.container3 {
-  max-width: 800px;
+ 
+  .container3 {
+  margin: 40px auto;
+  padding: 20px;
+  line-height: 1.6;
+  width: 100%;
+  margin-bottom: 20px;
+} 
+
+ .container4 {
+  width: 100%;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 20px;
-}
-
-.container4 {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
+  background-color: #192324;
+  margin-bottom: 100px;
+} 
 
 
 
-header {
+
+
+ header {
   text-align: center;
   margin-bottom: 20px;
-}
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+} 
 
-.service {
+  .service {
   margin-bottom: 50px;
   padding: 20px;
   border-radius: 8px;
-}
+} 
 
-.strategy {
+ .strategy {
   font-size: 18px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.4); 
   transition: color 0.3s ease;
-}
+} 
 
 .strategy span {
   font-size: 22px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.4);
   transition: color 0.3s ease;
+  margin-left: 20px;
 }
 
 .creation {
   font-size: 18px;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.4); 
+  color: rgb(255, 255, 255, 0.377); 
   transition: color 0.3s ease;
 }
 
 .creation span {
   font-size: 22px;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.377);
   transition: color 0.3s ease;
+  margin-left: 20px;
 }
 
 /* Highlight text on hover */
@@ -293,7 +332,7 @@ header {
 
 .service:hover .creation,
 .service:hover .creation span {
-  color: rgba(0, 0, 0, 0.9); 
+  color: rgb(255, 255, 255); 
 }
 
 
@@ -307,7 +346,6 @@ header {
 
 .hero-section {
   display: flex;
-  align-items: center;
   position: relative;
   width: 100%;
   height: 100vh; 
@@ -334,6 +372,10 @@ header {
   background-color: #fff;
   cursor: pointer;
   font-size: 1rem;
+  display: flex;
+  position: absolute;
+  bottom: 20px; /* Position the button 20px from the bottom */
+
 }
 
 .cta-button:hover {
@@ -356,11 +398,11 @@ header {
 }
 
 .logo-image {
-  max-width: 150px;
   margin-bottom: 20px;
 }
 
 .footer-links {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap; 
   margin: 20px 0;
@@ -399,6 +441,8 @@ header {
 }
 
 .footer-copyright {
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
   font-size: 0.8rem;
   color: #666;

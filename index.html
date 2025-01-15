@@ -6,23 +6,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FounderLab2</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
  </head>
 
  <body>
     <nav id="header">
+        <div class="logosmall">
+            <img src="./assets/logosmall.png" alt="Logo">
+        </div>
         <div class="btn-container">
             <button class="btn btn-color-1" onclick="">Get in touch</button>
         </div>
-        <div class="logosmall">
-            <img src="./assets/logosmall.png">
-        </div>
     </nav>
-    <section id="main">
+    <section id="main fade-in">
         <div class="logolarge">
             <img src="./assets/logo.png">
         </div>
@@ -34,13 +31,13 @@
         </div>
     </section>
 
-    <section class="intro1">
+    <section class="intro1 fade-in">
         <div class="container1">
             <div class="message">
                 <p class="line">The future of your brand,</p>
                 <p class="line">isn’t your brand at all.</p>
             </div>
-            <div class="highlight">
+            <div class="message">
                 <p>It’s you.</p>
             </div>
             <div class="message">
@@ -50,46 +47,36 @@
         </div>
     </section>
 
-    <section id="intro2">
-        <div class="container2">
-            <div class="header">
-                Why should you care about your personal brand?
-            </div>
-            <div class="stats">
-
-                <div class="stat-item">
-                    <div class="number">01</div>
-                    <div class="text">
-                        <p>
-                            People are willing to pay up to <span class="highlight">13.57x</span> more
-                            for those they consider to be elite experts, compared to the average person.
-                        </p>
-                    </div>
-                    <div class="source">Source: Hinge Marketing</div>
-                </div>
-
-                <div class="stat-item">
-                    <div class="number">02</div>
-                    <div class="text">
-                        <p>
-                            <span class="highlight">77%</span> of consumers are more likely to buy when the CEO of the business uses social media.
-                        </p>
-                    </div>
-                    <div class="source">Source: Kurogo</div>
-                </div>
-
-         <div class="stat-item">
-            <div class="number">03</div>
-            <div class="text">
-                <p>
-                    Executives worldwide attribute up to <span class="highlight">43%</span> of company market value to their CEO's reputation.
-                </p>
-                </div>
-                <div class="source">Source: Weber-Shandwick</div>
-                </div>
-            </div>
-    </div>
-    </section>
+    <section class="personal-brand-stats fade-in">
+        <h2>Why should you care about your personal brand?</h2>
+        <div class="stat">
+          <div class="stat-number">01</div>
+          <div class="stat-content">
+            <p>
+              People are willing to pay up to <span class="highlight">13.57x</span> more for those they consider to be elite experts, compared to the average person.
+            </p>
+          </div>
+          <div class="stat-source">Source: Hinge Marketing</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">02</div>
+          <div class="stat-content">
+            <p>
+              <span class="highlight">77%</span> of consumers are more likely to buy when the CEO of the business uses social media.
+            </p>
+          </div>
+          <div class="stat-source">Source: Kurogo</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">03</div>
+          <div class="stat-content">
+            <p>
+              Executives worldwide attribute up to <span class="highlight">43%</span> of company market value to their CEO's reputation.
+            </p>
+          </div>
+          <div class="stat-source">Source: Weber-Shandwick</div>
+        </div>
+      </section>
 
     <head>
         <meta charset="UTF-8">
@@ -98,7 +85,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <section class="branding-section">
+        <section class="branding-section fade-in">
             <div class="branding-content">
                 <h1>CEOs, Founders and Executive Leaders are utilising personal branding more than ever before.</h1>
                 <button class="cta-button">Find out how</button>
@@ -110,7 +97,7 @@
 
         
 
-        <div class="container3">
+        <div class="container3 fade-in">
             <header>
                 <h1>How can FounderLab help you?</h1>
             </header>
@@ -124,7 +111,7 @@
                 </p>
             </section>
             <section class="service" id="section2">
-                <h2 class="strategy">Strategy <span>LinkedIn Coaching</span></h2>
+                <h2 class="strategy">Strategy <span class="highlight">LinkedIn Coaching</span></h2>
                 <p class="strategy">
                     Turn LinkedIn into your most powerful business tool. Our LinkedIn coaching service helps founders and
                     business leaders transform their profiles into lead-generating assets. We teach you how to grow your
@@ -132,7 +119,7 @@
                 </p>
             </section>
             <section class="service" id="section3">
-                <h2 class="strategy">Strategy <span>Social Media Management</span></h2>
+                <h2 class="strategy">Strategy <span class="highlight">Social Media Management</span></h2>
                 <p class="strategy">
                     Stop stressing about social media. We take the guesswork out of building your online presence by
                     managing your social channels, creating high-impact content, and ensuring your brand stays visible,
@@ -140,7 +127,7 @@
                 </p>
             </section>
             <section class="service" id="section4">
-                <h2 class="strategy">Strategy <span>PR and Media Outreach</span></h2>
+                <h2 class="strategy">Strategy <span class="highlight">PR and Media Outreach</span></h2>
                 <p class="strategy">
                     Get your name in the right places. We help founders and executives secure media coverage, podcast guest
                     spots, and speaking engagements that boost their credibility and influence in their industry.
@@ -148,7 +135,7 @@
             </section>
         </div>
 
-        <div class="container4">
+        <div class="container4 fade-in">
             <section class="service" id="section1">
                 <h2 class="creation">Creation <span class="highlight">Personal Brand Design</span></h2>
                 <p class="creation">
@@ -156,26 +143,26 @@
                 </p>
             </section>
             <section class="service" id="section2">
-                <h2 class="creation">Creation <span>Founder-Driven Content Creation</span></h2>
+                <h2 class="creation">Creation <span class="highlight">Founder-Driven Content Creation</span></h2>
                 <p class="creation">
                     You’re the expert—we make sure the world knows it. FounderLab helps you create founder-driven content that showcases your expertise without taking hours of your time.
                     From articles and social media posts to thought leadership pieces, we handle the content so you can focus on your business.
                 </p>
             </section>
             <section class="service" id="section3">
-                <h2 class="creation">Creation <span>Executive Ghostwriting</span></h2>
+                <h2 class="creation">Creation <span class="highlight">Executive Ghostwriting</span></h2>
                 <p class="creation">
                     Your voice, amplified. Don’t have time to write articles, blogs, or LinkedIn posts? FounderLab’s executive ghostwriting service crafts thoughtful, high-impact content in your voice to position you as a leading voice in your field.
                 </p>
             </section>
             <section class="service" id="section4">
-                <h2 class="creation">Creation <span>Vlogging and YouTube Content</span></h2>
+                <h2 class="creation">Creation <span class="highlight">Vlogging and YouTube Content</span></h2>
                 <p class="creation">
                     Bring your brand to life with video. We help founders and executives launch engaging vlogs that showcase their expertise and personality. From scripting to editing, we manage the entire process so your videos look professional and authentic.
                 </p>
             </section>
             <section class="service" id="section5">
-                <h2 class="creation">Creation <span>Podcasting</span></h2>
+                <h2 class="creation">Creation <span class="highlight">Podcasting</span></h2>
                 <p class="creation">
                         Launch your podcast without the hassle. FounderLab helps you create a podcast that builds your influence and connects you with your audience. From concept to production, we handle the details so you can focus on sharing your insights.
                 </p>
@@ -183,14 +170,14 @@
         </div>
 
 
-    <div class="hero-section">
+    <div class="hero-section fade-in">
             <div class="hero-content">
               <h1>Influence starts with your personal brand.<br>Let’s build it.</h1>
               <button class="cta-button">Get in touch</button>
             </div>
           </div>
         
-          <footer class="footer-section">
+          <footer class="footer-section fade-in">
             <img class="logo-image" src="assets/logo.png" alt="FounderLab2 Logo">
             <div class="footer-links">
               <div class="footer-column">
@@ -207,5 +194,31 @@
             </div>
             <p class="footer-copyright">HICKS2 STUDIO LTD © 2025</p>
           </footer>
+
+
+
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const fadeElements = document.querySelectorAll(".fade-in");
+          
+              const fadeInObserver = new IntersectionObserver(
+                (entries, observer) => {
+                  entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                      entry.target.classList.add("visible");
+                      observer.unobserve(entry.target);
+                    }
+                  });
+                },
+                {
+                  threshold: 0.1,
+                }
+              );
+          
+              fadeElements.forEach((element) => {
+                fadeInObserver.observe(element);
+              });
+            });
+          </script>
 
  </body>
