@@ -19,22 +19,20 @@
       display: none;
     }
   
-    
 
-    /* Position the button at the bottom of the main section */
     .btn-container {
-    display: flex; /* Ensure the container layout remains intact */
+    display: flex;
     justify-content: center;
-    margin-top: 800px; /* Push the button to the bottom of the section */
-    padding: 20px 0; /* Add spacing */
+    margin-top: 800px; 
+    padding: 20px 0;
   }
 
-  /* Ensure button styling is mobile-friendly */
+ 
     .btn {
     font-size: 1rem;
     padding: 10px 20px;
     border-radius: 30px;
-    background-color: #fff; /* Optional: Update for visibility */
+    background-color: #fff; 
     color: #333;
     border: 1px solid #333;
   }
@@ -182,5 +180,5 @@
       background-repeat: no-repeat;
       background-position: center;
     }
-  }
+
   

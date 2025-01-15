@@ -6,19 +6,19 @@ html {
 }
 
 @font-face {
-  font-family: 'NeueMontrealBook'; /* Replace with your font name */
-  src: url('./assets/fonts/PPNeueMontreal-Book.woff2') format('woff2'), /* Modern browsers */
-       url('./assets/fonts/PPNeueMontreal-Book.woff') format('woff');   /* Older browsers */
-  font-weight: normal; /* Regular weight */
-  font-style: normal;  /* Regular style */
+  font-family: 'NeueMontrealBook';
+  src: url('./assets/fonts/PPNeueMontreal-Book.woff2') format('woff2'), 
+       url('./assets/fonts/PPNeueMontreal-Book.woff') format('woff');  
+  font-weight: normal; 
+  font-style: normal; 
 }
 
 @font-face {
-  font-family: 'NeueMontrealBold'; /* Replace with your font name */
-  src: url('./assets/fonts/PPNeueMontreal-Bold.woff2') format('woff2'), /* Modern browsers */
-       url('./assets/fonts/PPNeueMontreal-Bold.woff2') format('woff');   /* Older browsers */
-  font-weight: normal; /* Regular weight */
-  font-style: normal;  /* Regular style */
+  font-family: 'NeueMontrealBold'; 
+  src: url('./assets/fonts/PPNeueMontreal-Bold.woff2') format('woff2'), 
+       url('./assets/fonts/PPNeueMontreal-Bold.woff2') format('woff');  
+  font-weight: normal; 
+  font-style: normal;  
 }
 
 
@@ -37,10 +37,9 @@ body {
 }
 
 html, body {
-  height: 100%; /* Ensure the body spans the full viewport height */
-  margin: 0; /* Remove default browser margin */
+  height: 100%;
+  margin: 0; 
 }
-
 
 
 .fade-in {
@@ -122,15 +121,15 @@ nav {
 
 .container1 {
   width: 100%;
-  min-height: 100vh; /* Full viewport height */
+  min-height: 100vh; 
   margin: 0;
-  padding: 60px 20px; /* Add some inner spacing */
-  background-color: #192324; /* Dark background */
+  padding: 60px 20px; 
+  background-color: #192324; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box; /* Include padding in height calculations */
+  box-sizing: border-box; 
 }
 
 .message {
@@ -374,8 +373,7 @@ nav {
   font-size: 1rem;
   display: flex;
   position: absolute;
-  bottom: 20px; /* Position the button 20px from the bottom */
-
+  bottom: 20px;
 }
 
 .cta-button:hover {
